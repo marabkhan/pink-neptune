@@ -6,6 +6,7 @@ import image3 from '../assets/image3.jpg';
 import image4 from '../assets/image4.jpg';
 import image5 from '../assets/image5.jpg';
 import image6 from '../assets/image6.jpg';
+import image7 from '../assets/image7.jpg';
 
 import type { imageItem } from '~/types';
 
@@ -13,52 +14,55 @@ export const contactPeople = [
   {
     id: "0",
     type: "board",
-    name: "Name",
-    email: "email",
+    name: "Board of Directors",
+    email: "bod@plfrva.com",
   },
   {
     id: "1",
     type: "director",
-    name: "Name",
-    title: "Position",
-    email: "Email",
+    name: "Ryan Bowman",
+    title: "President & Director of Events, Sound Lead Manager",
+    email: "bowman@plfrva.com",
   },
   {
     id: "2",
     type: "director",
-    name: "Name",
-    title: "Position",
-    email: "Email",
+    name: "Kristen Marie",
+    title: "Secretary & Director of Performance Arts, Fire Lead Manager",
+    email: "kristen@plfrva.com",
   },
   {
     id: "3",
     type: "committee",
-    title: "title",
-    email: "email",
+    title:
+      "For all sound, event, and general entertainment inquiries, please email our Event and Sound Committee at",
+    email: "events@plfrva.com",
   },
   {
     id: "4",
     type: "committee",
-    title: "title",
-    email: "email",
+    title:
+      "For all fire spinning, dance, and performance art inquiries, please email our Fire and Performance Art Committee at",
+    email: "fire@plfrva.com",
   },
   {
     id: "5",
     type: "currentMember",
-    title: "title",
-    email: "email",
+    title: "Fire and Performance Art Committee:",
+    members: "Kristen Marie, Matthew Sosticky, Ginnie Fae, Steven Warrick.",
   },
   {
     id: "6",
     type: "currentMember",
-    title: "Member(s):",
+    title: "Event and Sound Committee:",
     members:
-      "name 1, name 2, name 3, name 4,.",
+      "Ryan Bowman, Ryan Betancourt, Daniel Burke, Josh Crenshaw, Kat Gavino.",
   },
 ];
 
 export const contactUs = [
-"contact us "];
+  "Questions about an upcoming event? Want to get involved? Email any of our Directors or BOD@PLFRVA.COM anytime and we will get back to you as soon as we can! Our committees and BOD are growing as we expand to meet the needs of the community. We want to genuinely thank everyone who has supported us, shown us grace and patience, and contributed to the growth of this organization. Our doors are always open.",
+];
 
 export const pages = [
   {
