@@ -1,6 +1,17 @@
 import React from "react";
+import image1 from '../assets/image3.jpg';
+
+type ImageMetadata = {
+  src: string;
+  width: number;
+  height: number;
+  format?: string; 
+};
+
+const image: ImageMetadata[] = [ image1 ];
 
 const ImageGallery = () => {
+  
   return (
     <div className="flex justify-center items-center py-12">
       <div className="flex flex-row gap-96 ">
@@ -18,7 +29,7 @@ const ImageGallery = () => {
 
         <div className="flex-shrink-0">
           <img
-            src="https://cdn.discordapp.com/attachments/1299578941278781461/1309759330316455996/IMG_6234.jpg?ex=6744116e&is=6742bfee&hm=6b4d21eccfbc6f7851cef0026128989faa4633326e3f626b9c607ae7df3b92e1&"
+            src={image[0].src}
             alt="Event"
             className="w-auto max-h-[35rem] object-cover border-2 border-white"
           />
