@@ -6,9 +6,11 @@ import { HeaderSection } from '../sections/HeaderSection';
 
 import UpcomingEvents from "~/sections/UpcomingEvents";
 import FuckThisMarquee from "~/sections/FuckThisMarquee"; 
+import Logo from '~/sections/logo.astro';
 ---
 
 <Layout title=".">
+    <Logo />
     <HeaderSection />
     <div class="justify-self-center">
         <FuckThisMarquee client:only="react" />

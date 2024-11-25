@@ -7,7 +7,6 @@ export const HeaderSection = () => {
       <div className="static py-4 top-0 z-50 left-0 w-full bg-transperent">
         <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
           <div className="flex-shrink-0">
-            <div className="text-red-500 font-bold text-xl">logo</div>
           </div>
 
           <div className="absolute hidden md:block   left-1/2 transform -translate-x-1/2">
