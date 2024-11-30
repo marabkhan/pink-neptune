@@ -1,6 +1,7 @@
 ---
 import Button from "~/components/Button.astro";
 import { pages } from "../constants";
+import "~/index.css";
 
 const currentPage = pages.find((page) => page.url === Astro.url.pathname) || pages[0];
 ---
@@ -43,6 +44,6 @@ const currentPage = pages.find((page) => page.url === Astro.url.pathname) || pag
   <Button 
     href="/previous-events" 
     text="DONATE TO SUPPORT OUR INITIATIVES" 
-    customClass="py-4 py-2 bg-red-500 rounded-lg text-brightGreen hover:text-lime-500" 
+    customClass="py-4 py-2 bg-brightGreen rounded-lg text-white hover:bg-lime-500" 
   />
 </div>
