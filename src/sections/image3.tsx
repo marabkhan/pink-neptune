@@ -10,7 +10,7 @@ type ImageMetadata = {
   format?: string; 
 };
 
-const images: ImageMetadata[] = [flyer1, flyer2, flyer3, flyer4, flyer5, flyer6, flyer5, flyer6, flyer5, flyer6, flyer5, flyer6];
+const images: ImageMetadata[] = [flyer1, flyer2, flyer3, flyer4, flyer5, flyer6, ];
 
 const ImageGallery = () => {
   return (
