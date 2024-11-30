@@ -26,7 +26,6 @@ import flyer3 from "./flyers/flyer3.jpg";
 import flyer4 from "./flyers/flyer4.jpg";
 import flyer5 from "./flyers/flyer5.jpg";
 import flyer6 from "./flyers/flyer6.jpg";
-import flyer7 from "./flyers/flyer7.jpg";
 
 
 
