@@ -1,22 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import { ContactSection } from '../sections/ContactSection';
-import { HeaderSection } from '../sections/HeaderSection';
 
 import UpcomingEvents from "~/sections/UpcomingEvents";
 import FuckThisMarquee from "~/sections/FuckThisMarquee"; 
 import Logo from '~/sections/logo.astro';
+import HeaderSection from '~/sections/HeaderSection.astro';
+import FooterSection from '~/sections/FooterSection.astro';
+import MissionStatement from '~/sections/MissionStatement.astro';
+import Button from '~/components/Button.astro';
 ---
 
 <Layout title=".">
-    <Logo />
-    <HeaderSection />
-    <div class="justify-self-center">
-        <FuckThisMarquee client:only="react" />
-        <UpcomingEvents />
-        <div class="pt-50 pl-50 flex justify-center items-center">
-            <button class="px-4 py-2 text-red-500 rounded">temp button - previous events redirect</button>
-        </div>
+  <Logo />
+  <HeaderSection />
+  <div class="flex flex-col items-center gap-8 px-4 md:px-8 lg:px-16">
+    <FuckThisMarquee client:only="react" />
+    <UpcomingEvents />
+    <div class="pt-6 md:pt-6 flex justify-center items-center">
+        <Button 
+        href="/previous-events" 
+        text="Previous Events Redirect" 
+        customClass="px-4 py-2 bg-red-500 hover:bg-red-600 rounded-lg"
+      />
     </div>
+  </div>
+  <MissionStatement />
+  <FooterSection />
 </Layout>

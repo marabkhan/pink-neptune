@@ -82,7 +82,43 @@ export const pages = [
   },
 ];
 
-
+export const images: imageItem[] = [
+  {
+    id: "1",
+    imgs: image1,
+    title: "First Image",
+    description: "Description of the first image.",
+    dateTime: "12:30",
+  },
+  {
+    id: "2",
+    imgs: image2,
+    title: "Second Image",
+    description: "Description of the second image.",
+    dateTime: "1:30",
+  },
+  {
+    id: "3",
+    imgs: image3,
+    title: "Third Image",
+    description: "Description of the third image.",
+    dateTime: "2:30",
+  },
+  {
+    id: "4",
+    imgs: image4,
+    title: "Third Image",
+    description: "Description of the third image.",
+    dateTime: "2:30",
+  },
+  {
+    id: "5",
+    imgs: image5,
+    title: "Third Image",
+    description: "Description of the third image.",
+    dateTime: "2:30",
+  },
+];
 
 export const socials = [
   {

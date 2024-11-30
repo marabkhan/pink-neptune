@@ -1,0 +1,48 @@
+---
+import Button from "~/components/Button.astro";
+import { pages } from "../constants";
+
+const currentPage = pages.find((page) => page.url === Astro.url.pathname) || pages[0];
+---
+
+<header class="mb-6 bg-transparent">
+  <div class="static py-2 top-0 z-50 left-0 w-full bg-transparent">
+    <div class="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-2">
+
+      <div class="block md:hidden relative w-full">
+        <select
+          class="block w-full py-2 px-3 border border-gray-300 bg-white text-brightGreen focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500 rounded-md"
+          onchange="location.href=this.value"
+        >
+          <option value={currentPage.url} selected>{currentPage.title}</option>
+          {pages.map((page) => (
+            <option value={page.url} >{page.title}</option>
+          ))}
+        </select>
+      </div>
+
+      <div class="absolute hidden md:block left-1/2 transform -translate-x-1/2">
+        <nav class="flex gap-8">
+          {pages.map((page) => (
+            <a
+              href={page.url}
+              class={`text-brightGreen hover:text-lime-500 transition ${
+                page.url === currentPage.url ? "font-bold" : ""
+              }`}
+            >
+              {page.title}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="flex justify-center my-6">
+  <Button 
+    href="/previous-events" 
+    text="DONATE TO SUPPORT OUR INITIATIVES" 
+    customClass="py-4 py-2 bg-red-500 rounded-lg text-brightGreen hover:text-lime-500" 
+  />
+</div>
