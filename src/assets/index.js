@@ -37,7 +37,7 @@ export {
     IMG_146, IMG_1023, IMG_3103, IMG_3123, IMG_3132, IMG_3413, IMG_3913, IMG_4912, IMG_4913, Wax0, wax1, wax2,
 
 
-    flyer1, flyer2, flyer3, flyer4, flyer5, flyer6, flyer7
+    flyer1, flyer2, flyer3, flyer4, flyer5, flyer6,
 
  };
 

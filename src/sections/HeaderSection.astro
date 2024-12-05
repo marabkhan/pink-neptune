@@ -4,6 +4,7 @@ import { pages } from "../constants";
 import "~/index.css";
 
 const currentPage = pages.find((page) => page.url === Astro.url.pathname) || pages[0];
+const filteredPages = pages.filter((page) => page.url !== currentPage.url);
 ---
 
 <header class="mb-6 bg-transparent">
@@ -16,8 +17,8 @@ const currentPage = pages.find((page) => page.url === Astro.url.pathname) || pag
           onchange="location.href=this.value"
         >
           <option value={currentPage.url} selected>{currentPage.title}</option>
-          {pages.map((page) => (
-            <option value={page.url} >{page.title}</option>
+          {filteredPages.map((page) => (
+            <option value={page.url}>{page.title}</option>
           ))}
         </select>
       </div>

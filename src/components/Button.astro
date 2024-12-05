@@ -4,8 +4,7 @@ const { href = "#", text = "Click Me", customClass = "" } = Astro.props;
 
 <a
   href={href}
-  class={`px-10 py-3 bg-brightGreen rounded-lg text-white hover:bg-darkGreen font-semibold shadow-md transition duration-300 ${customClass} mb-6 `}
-  target="_blank"
+  class={`px-4 md:px-10 py-3 bg-brightGreen font-bold rounded-lg text-white hover:bg-darkGreen shadow-md transition duration-300 ${customClass} mb-6 `}
   rel="noopener noreferrer"
 >
   {text}
