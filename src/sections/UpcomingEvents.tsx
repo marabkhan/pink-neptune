@@ -15,7 +15,9 @@ const ImageGallery = () => {
     <div className="flex flex-col md:flex-row items-start py-12 px-4 md:px-8 lg:px-16">
       <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 items-start">
         <div className="flex-grow">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">Event Title</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
+            Event Title
+          </h2>
           <p>
             <strong>Location:</strong> Main Hall
           </p>

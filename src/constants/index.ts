@@ -1,63 +1,38 @@
-
-
-import type { imageItem } from "~/types";
-
+import { discordBlack, facebook, instagram, twitter } from "../assets";
 
 import {
-  discordBlack,
-  facebook,
-  instagram,
-  twitter,
-} from "../assets";
+  flyer1,
+  flyer2,
+  flyer3,
+  flyer4,
+  flyer5,
+  flyer6,
+} from "~/assets/index.js";
 
-export const contactPeople = [
+import {
+  IMG_146,
+  IMG_1023,
+  IMG_3103,
+  IMG_3123,
+  IMG_3132,
+  IMG_3413,
+  IMG_3913,
+  IMG_4912,
+  IMG_4913,
+  Wax0,
+  wax1,
+  wax2,
+} from "~/assets/index.js";
+
+export const contact = [
   {
-    id: "0",
-    type: "board",
-    name: "Name",
-    email: "email",
-  },
-  {
-    id: "1",
-    type: "director",
-    name: "Name",
-    title: "Position",
-    email: "Email",
-  },
-  {
-    id: "2",
-    type: "director",
-    name: "Name",
-    title: "Position",
-    email: "Email",
-  },
-  {
-    id: "3",
-    type: "committee",
-    title: "title",
-    email: "email",
-  },
-  {
-    id: "4",
-    type: "committee",
-    title: "title",
-    email: "email",
-  },
-  {
-    id: "5",
-    type: "currentMember",
-    title: "title",
-    email: "email",
-  },
-  {
-    id: "6",
-    type: "currentMember",
-    title: "Member(s):",
-    members: "name 1, name 2, name 3,.",
+    email: "wmtechnosociety@gmail.com",
+    instagramHandle: "wmtechno",
+    instagramUrl: `https://instagram.com/wmtechno`,
   },
 ];
 
-export const contactUs = ["contact us "];
+export const contactUsBii = ["contact us "];
 
 export const pages = [
   {
@@ -81,8 +56,6 @@ export const pages = [
     url: "/contact",
   },
 ];
-
-
 
 export const socials = [
   {
@@ -110,3 +83,66 @@ export const socials = [
     url: "/contact",
   },
 ];
+
+export const images = [
+  { src: IMG_146, alt: "Description of IMG_146" },
+  { src: IMG_1023, alt: "Description of IMG_1023" },
+  { src: IMG_3103, alt: "Description of IMG_3103" },
+  { src: IMG_3123, alt: "Description of IMG_3123" },
+  { src: IMG_3132, alt: "Description of IMG_3132" },
+  { src: IMG_3413, alt: "Description of IMG_3413" },
+  { src: IMG_3913, alt: "Description of IMG_3913" },
+  { src: IMG_4912, alt: "Description of IMG_4912" },
+  { src: IMG_4913, alt: "Description of IMG_4913" },
+  { src: Wax0, alt: "Description of Wax0" },
+  { src: wax1, alt: "Description of Wax1" },
+  { src: wax2, alt: "Description of Wax2" },
+];
+
+export const logo = [{ src: "", alt: "logo" }];
+
+export const previousEventFlyers = [
+  {
+    src: flyer1,
+    alt: "Flyer 1",
+    title: "Event 1",
+    description: "Description of Event 1",
+  },
+  {
+    src: flyer2,
+    alt: "Flyer 2",
+    title: "Event 2",
+    description: "Description of Event 2",
+  },
+  {
+    src: flyer3,
+    alt: "Flyer 3",
+    title: "Event 3",
+    description: "Description of Event 3",
+  },
+  {
+    src: flyer4,
+    alt: "Flyer 4",
+    title: "Event 4",
+    description: "Description of Event 4",
+  },
+  {
+    src: flyer5,
+    alt: "Flyer 5",
+    title: "Event 5",
+    description: "Description of Event 5",
+  },
+  {
+    src: flyer6,
+    alt: "Flyer 6",
+    title: "Event 6",
+    description: "Description of Event 6",
+  },
+];
+
+export const missionStatement = `
+  Our goal is to cultivate a community centered around the creation of shared experiences in and
+  around Williamsburg, Virginia. We aim to foster collaboration, creativity, and connection among 
+  electronic music artists and listeners alike
+
+  `;

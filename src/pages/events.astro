@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HeaderSection from '~/sections/HeaderSection.astro';
-import Image3 from "~/sections/image3";
+import HeaderSection from "~/sections/HeaderSection.astro";
+import PreviousEventsSection from "~/sections/PreviousEventsSection";
 import Logo from "~/sections/logo.astro";
 import FooterSection from "~/sections/FooterSection.astro";
 export const prerender = true;
@@ -12,13 +12,9 @@ export const prerender = true;
 
   <HeaderSection />
 
-
   <div class="text-5xl text-center pb-12">Previous Events</div>
-  <Image3 />
+  <PreviousEventsSection />
   <div class="mt-32">
-
     <FooterSection />
-
   </div>
-
 </Layout>

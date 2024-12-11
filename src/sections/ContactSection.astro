@@ -1,9 +1,7 @@
 ---
-const email = "wmtechnosociety@gmail.com";
-const instagramHandle = "wmtechno";
-const instagramUrl = `https://instagram.com/${instagramHandle}`;
-import "~/index.css"; 
-
+import "~/index.css";
+import { contact } from "../constants";
+const { email, instagramHandle, instagramUrl } = contact[0];
 ---
 
 <div class="container mx-auto space-y-8 max-w-lg text-center">
@@ -20,7 +18,12 @@ import "~/index.css";
     </div>
     <div>
       <p class="text-lg font-bold">Instagram:</p>
-      <a href={instagramUrl} target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">
+      <a
+        href={instagramUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-blue-600 underline"
+      >
         @{instagramHandle}
       </a>
     </div>

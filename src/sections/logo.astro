@@ -1,10 +1,13 @@
 ---
-
-
+import { logo } from "../constants";
+import Image from "astro:assets";
 ---
 
 <div class="container mx-auto flex items-center justify-center h-32">
-    <div class="item-center text-red-500">
-        logo
-    </div>
+  <div class="item-center text-red-500">
+    <!--
+        <Image src={logo[0].src} alt={logo[0].alt} class="h-16 w-auto" />
+        -->
+    logo
+  </div>
 </div>
