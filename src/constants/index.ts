@@ -146,3 +146,14 @@ export const missionStatement = `
   electronic music artists and listeners alike
 
   `;
+
+
+  
+  export const nextEvent = {
+    title: "Event Title",
+    description: "Description of the event goes here.",
+    location: "Main Hall",
+    date: "December 5, 2024",
+    image: flyer1 as ImageMetadata,
+  };
+  
